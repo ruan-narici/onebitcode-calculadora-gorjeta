@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/icon.png">
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>Pizzaria | Gorjeta</title>
+    </head>
+    <body>
+        <main>
+            <section class="calc-gorjeta">
+                    <div class="box-gorjeta">
+                        <div class="box-title-gorjeta">
+                            <h1>Calculadora de gorjetas</h1>
+                        </div>
+                        <div class="box-questinario">
+                            <label for="inpt-valor-conta">Quanto ficou a conta?</label>
+                            <input type="number" name="calc-gorj" id="inpt-valor-conta" placeholder="R$45,00" alf="Informe o valor total da conta" required>
+                            <label for="select-desc-serv">Como foi seu serviço?</label>
+                            <select name="calc-gorj" id="select-desc-serv" alt="Avalie o serviço" required>
+                                <option value="0.25">Incrível</option>
+                                <option value="0.20">Bom</option>
+                                <option value="0.15">Aceitável</option>
+                                <option value="0.10">Ruim</option>
+                                <option value="0.05">Péssimo</option>
+                            </select>
+                            <label for="inpt-qtd-pessoas">Quantas pessoas vão dividr a conta?</label>
+                            <input type="number" name="calc-gorj" id="inpt-qtd-pessoas" value="" placeholder="1" alt="Informe a quantidade de pessoas que vão dividir a conta" required>
+                        </div>
+                        <div class="box-btn">
+                            <input type="submit" value="Calcular" id="btn-calcular" alt="Efetuar cálculo">
+                        </div>
+                        <div class="box-result">
+                            <span class="result"></span>
+                            <span class="result-vlr"></span>
+                            <span class="result-qtd-pessoas"></span>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <script src="./assets/main.js"></script>
+    </body>
+</html>
